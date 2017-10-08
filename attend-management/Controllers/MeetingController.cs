@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Swashbuckle.Swagger.Annotations;
+using attend_data;
 
 namespace attend_management.Controllers
 {
@@ -16,9 +17,9 @@ namespace attend_management.Controllers
         [SwaggerOperation("GetById")]
         [SwaggerResponse(HttpStatusCode.OK)]
         [SwaggerResponse(HttpStatusCode.NotFound)]
-        public string Get(Guid id)
+        public MeetingRetrieve Get(Guid id)
         {
-            return "value";
+            return new MeetingRetrieve { Id = Guid.NewGuid() };
         }
     }
 }

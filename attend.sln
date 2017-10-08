@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "attend-management", "attend-management\attend-management.csproj", "{1084F587-CE88-41DD-8D51-510C9176E460}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "attend-data", "attend-data\attend-data.csproj", "{534F9700-117F-4B6A-8F23-D1371DEB8383}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1084F587-CE88-41DD-8D51-510C9176E460}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1084F587-CE88-41DD-8D51-510C9176E460}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1084F587-CE88-41DD-8D51-510C9176E460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{534F9700-117F-4B6A-8F23-D1371DEB8383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534F9700-117F-4B6A-8F23-D1371DEB8383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534F9700-117F-4B6A-8F23-D1371DEB8383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534F9700-117F-4B6A-8F23-D1371DEB8383}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
