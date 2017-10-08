@@ -47,7 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\MeetingRetrieve.cs" />
+    <Compile Include="DataModel\AttendContext.cs" />
+    <Compile Include="DataModel\Meeting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repo\IMeetingRepository.cs" />
     <Compile Include="Repo\MeetingRepository.cs" />

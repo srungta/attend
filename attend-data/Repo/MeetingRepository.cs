@@ -2,11 +2,14 @@
 
 namespace attend_data.Repo
 {
-    class MeetingRepository : IMeetingRepository
+    public class MeetingRepository : IMeetingRepository
     {
-        public MeetingRetrieve Retrieve(Guid id)
+        public Meeting Retrieve(Guid id)
         {
-            throw new NotImplementedException();
+            return new Meeting
+            {
+                Id = Guid.NewGuid()
+            };
         }
     }
 }

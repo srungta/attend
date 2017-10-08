@@ -6,20 +6,28 @@ using System.Net.Http;
 using System.Web.Http;
 using Swashbuckle.Swagger.Annotations;
 using attend_data;
+using attend_data.Repo;
 
 namespace attend_management.Controllers
 {
     [RoutePrefix("api/v1.0/meetings")]
     public class MeetingController : ApiController
     {
+        private IMeetingRepository meetingRepo;
+
+        public MeetingController(IMeetingRepository meetingRepo)
+        {
+            this.meetingRepo = meetingRepo;
+        }
+
         // GET api/v1.0/meetings/{id}
         [Route("{id}")]
         [SwaggerOperation("GetById")]
         [SwaggerResponse(HttpStatusCode.OK)]
         [SwaggerResponse(HttpStatusCode.NotFound)]
-        public MeetingRetrieve Get(Guid id)
+        public Meeting Get(string id)
         {
-            return new MeetingRetrieve { Id = Guid.NewGuid() };
+            return meetingRepo.Retrieve(Guid.NewGuid());
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace attend_data
 {
-    public class MeetingRetrieve
+    public class Meeting
     {
         public Guid Id { get; set; }
     }
